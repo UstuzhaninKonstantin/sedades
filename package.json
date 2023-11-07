@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "express": "^4.18.2",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "start": "concurrently \"node app.js\" \"tsc -w\""
+  }
+}
