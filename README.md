@@ -2,7 +2,7 @@
 
 Typescript [Evades.io](https://evades.io) offline clone
 
-## Usage
+## Installation
 
 1. Clone the repo:
 
