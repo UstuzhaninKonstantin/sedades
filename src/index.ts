@@ -1,5 +1,5 @@
 import { canvas } from "./core/canvas";
-import { addEntity } from "./core/entities";
+import { setPlayer } from "./core/entities";
 import run from "./core/run";
 import Player from "./entities/Player";
 
@@ -11,7 +11,7 @@ button?.addEventListener("click", () => {
   menu.style.display = "none";
   canvas.style.display = "block";
 
-  addEntity(
+  setPlayer(
     new Player({
       x: 100,
       y: 100,

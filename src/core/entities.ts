@@ -1,6 +1,8 @@
 import Entity from "@/entities/Entity";
+import Player from "@/entities/Player";
 
 const entities: Entity[] = [];
+let player;
 
 function addEntity(entity: Entity): void {
   entities.push(entity);
@@ -17,4 +19,16 @@ function deleteAllEntities(): void {
   entities.splice(0, entities.length);
 }
 
-export { entities, addEntity, removeEntity, deleteAllEntities };
+function setPlayer(p: Player): void {
+  player = p;
+  addEntity(p);
+}
+
+export {
+  entities,
+  addEntity,
+  removeEntity,
+  deleteAllEntities,
+  setPlayer,
+  player,
+};
